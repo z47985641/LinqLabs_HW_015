@@ -56,6 +56,13 @@ namespace LinqLabs
             this.ordersTableAdapter1 = new LinqLabs.DataSet1TableAdapters.OrdersTableAdapter();
             this.tableAdapterManager1 = new LinqLabs.DataSet1TableAdapters.TableAdapterManager();
             this.DsOrder = new LinqLabs.DataSet1();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.button10 = new System.Windows.Forms.Button();
+            this.splitContainer3 = new System.Windows.Forms.SplitContainer();
+            this.splitContainer4 = new System.Windows.Forms.SplitContainer();
+            this.splitContainer5 = new System.Windows.Forms.SplitContainer();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -71,6 +78,19 @@ namespace LinqLabs
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DsOrder)).BeginInit();
+            this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).BeginInit();
+            this.splitContainer3.Panel1.SuspendLayout();
+            this.splitContainer3.Panel2.SuspendLayout();
+            this.splitContainer3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer4)).BeginInit();
+            this.splitContainer4.Panel1.SuspendLayout();
+            this.splitContainer4.Panel2.SuspendLayout();
+            this.splitContainer4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer5)).BeginInit();
+            this.splitContainer5.Panel1.SuspendLayout();
+            this.splitContainer5.Panel2.SuspendLayout();
+            this.splitContainer5.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -86,15 +106,14 @@ namespace LinqLabs
             // 
             this.splitContainer1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.IsSplitterFixed = true;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.groupBox1);
-            this.splitContainer1.Panel1.Controls.Add(this.groupBox2);
-            this.splitContainer1.Panel1.Controls.Add(this.groupBox3);
+            this.splitContainer1.Panel1.Controls.Add(this.splitContainer3);
             // 
             // splitContainer1.Panel2
             // 
@@ -105,17 +124,18 @@ namespace LinqLabs
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.NavajoWhite;
             this.groupBox1.Controls.Add(this.button9);
             this.groupBox1.Controls.Add(this.button8);
             this.groupBox1.Controls.Add(this.button7);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Enabled = false;
             this.groupBox1.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.groupBox1.Location = new System.Drawing.Point(1000, 0);
+            this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(455, 264);
+            this.groupBox1.Size = new System.Drawing.Size(327, 128);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "LINQ to Northwind DataSet - Products";
@@ -123,7 +143,7 @@ namespace LinqLabs
             // button9
             // 
             this.button9.AutoSize = true;
-            this.button9.Location = new System.Drawing.Point(170, 119);
+            this.button9.Location = new System.Drawing.Point(166, 50);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(135, 27);
             this.button9.TabIndex = 8;
@@ -134,7 +154,7 @@ namespace LinqLabs
             // button8
             // 
             this.button8.AutoSize = true;
-            this.button8.Location = new System.Drawing.Point(170, 162);
+            this.button8.Location = new System.Drawing.Point(166, 93);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(135, 27);
             this.button8.TabIndex = 7;
@@ -145,7 +165,7 @@ namespace LinqLabs
             // button7
             // 
             this.button7.AutoSize = true;
-            this.button7.Location = new System.Drawing.Point(29, 161);
+            this.button7.Location = new System.Drawing.Point(25, 92);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(135, 27);
             this.button7.TabIndex = 7;
@@ -155,7 +175,7 @@ namespace LinqLabs
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(29, 121);
+            this.textBox1.Location = new System.Drawing.Point(25, 52);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(135, 25);
             this.textBox1.TabIndex = 5;
@@ -164,23 +184,25 @@ namespace LinqLabs
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(133, 92);
+            this.label4.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label4.Location = new System.Drawing.Point(117, 21);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 17);
+            this.label4.Size = new System.Drawing.Size(86, 24);
             this.label4.TabIndex = 3;
-            this.label4.Text = "一頁幾筆";
+            this.label4.Text = "顯示筆數";
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.NavajoWhite;
             this.groupBox2.Controls.Add(this.button5);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.Cb_year);
             this.groupBox2.Controls.Add(this.button6);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.groupBox2.Location = new System.Drawing.Point(455, 0);
+            this.groupBox2.Location = new System.Drawing.Point(0, 0);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1000, 264);
+            this.groupBox2.Size = new System.Drawing.Size(327, 128);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "LINQ to Northwind DataSet - Orders";
@@ -188,7 +210,7 @@ namespace LinqLabs
             // button5
             // 
             this.button5.AutoSize = true;
-            this.button5.Location = new System.Drawing.Point(213, 48);
+            this.button5.Location = new System.Drawing.Point(11, 24);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(149, 27);
             this.button5.TabIndex = 7;
@@ -199,7 +221,7 @@ namespace LinqLabs
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(278, 142);
+            this.label5.Location = new System.Drawing.Point(118, 68);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(24, 17);
             this.label5.TabIndex = 4;
@@ -208,7 +230,7 @@ namespace LinqLabs
             // Cb_year
             // 
             this.Cb_year.FormattingEnabled = true;
-            this.Cb_year.Location = new System.Drawing.Point(213, 179);
+            this.Cb_year.Location = new System.Drawing.Point(166, 65);
             this.Cb_year.Name = "Cb_year";
             this.Cb_year.Size = new System.Drawing.Size(149, 25);
             this.Cb_year.TabIndex = 6;
@@ -216,7 +238,7 @@ namespace LinqLabs
             // button6
             // 
             this.button6.AutoSize = true;
-            this.button6.Location = new System.Drawing.Point(213, 95);
+            this.button6.Location = new System.Drawing.Point(166, 24);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(149, 27);
             this.button6.TabIndex = 7;
@@ -226,15 +248,15 @@ namespace LinqLabs
             // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.Color.NavajoWhite;
             this.groupBox3.Controls.Add(this.button1);
             this.groupBox3.Controls.Add(this.button2);
             this.groupBox3.Controls.Add(this.button3);
-            this.groupBox3.Controls.Add(this.button4);
-            this.groupBox3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox3.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.groupBox3.Location = new System.Drawing.Point(0, 0);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(455, 264);
+            this.groupBox3.Size = new System.Drawing.Size(482, 264);
             this.groupBox3.TabIndex = 10;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "LINQ to FileInfo[]";
@@ -242,7 +264,7 @@ namespace LinqLabs
             // button1
             // 
             this.button1.AutoSize = true;
-            this.button1.Location = new System.Drawing.Point(56, 22);
+            this.button1.Location = new System.Drawing.Point(101, 50);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(221, 43);
             this.button1.TabIndex = 7;
@@ -253,7 +275,7 @@ namespace LinqLabs
             // button2
             // 
             this.button2.AutoSize = true;
-            this.button2.Location = new System.Drawing.Point(56, 79);
+            this.button2.Location = new System.Drawing.Point(101, 107);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(221, 43);
             this.button2.TabIndex = 7;
@@ -265,7 +287,7 @@ namespace LinqLabs
             // button3
             // 
             this.button3.AutoSize = true;
-            this.button3.Location = new System.Drawing.Point(56, 136);
+            this.button3.Location = new System.Drawing.Point(101, 164);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(221, 43);
             this.button3.TabIndex = 7;
@@ -276,12 +298,13 @@ namespace LinqLabs
             // button4
             // 
             this.button4.AutoSize = true;
-            this.button4.Location = new System.Drawing.Point(56, 193);
+            this.button4.Location = new System.Drawing.Point(25, 72);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(221, 43);
             this.button4.TabIndex = 7;
             this.button4.Text = "搜尋 班級學生成績";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // splitContainer2
             // 
@@ -370,6 +393,104 @@ namespace LinqLabs
             this.DsOrder.DataSetName = "DataSet1";
             this.DsOrder.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // groupBox4
+            // 
+            this.groupBox4.BackColor = System.Drawing.Color.NavajoWhite;
+            this.groupBox4.Controls.Add(this.textBox3);
+            this.groupBox4.Controls.Add(this.textBox2);
+            this.groupBox4.Controls.Add(this.button10);
+            this.groupBox4.Controls.Add(this.button4);
+            this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox4.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.groupBox4.Location = new System.Drawing.Point(0, 0);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(630, 264);
+            this.groupBox4.TabIndex = 11;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "LINQ to Student score";
+            // 
+            // button10
+            // 
+            this.button10.AutoSize = true;
+            this.button10.Location = new System.Drawing.Point(25, 170);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(221, 43);
+            this.button10.TabIndex = 8;
+            this.button10.Text = "顯示個人成績";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // splitContainer3
+            // 
+            this.splitContainer3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.splitContainer3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer3.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer3.Name = "splitContainer3";
+            // 
+            // splitContainer3.Panel1
+            // 
+            this.splitContainer3.Panel1.Controls.Add(this.groupBox3);
+            // 
+            // splitContainer3.Panel2
+            // 
+            this.splitContainer3.Panel2.Controls.Add(this.splitContainer4);
+            this.splitContainer3.Size = new System.Drawing.Size(1459, 268);
+            this.splitContainer3.SplitterDistance = 486;
+            this.splitContainer3.TabIndex = 8;
+            // 
+            // splitContainer4
+            // 
+            this.splitContainer4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.splitContainer4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer4.IsSplitterFixed = true;
+            this.splitContainer4.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer4.Name = "splitContainer4";
+            // 
+            // splitContainer4.Panel1
+            // 
+            this.splitContainer4.Panel1.Controls.Add(this.groupBox4);
+            // 
+            // splitContainer4.Panel2
+            // 
+            this.splitContainer4.Panel2.Controls.Add(this.splitContainer5);
+            this.splitContainer4.Size = new System.Drawing.Size(969, 268);
+            this.splitContainer4.SplitterDistance = 634;
+            this.splitContainer4.TabIndex = 12;
+            // 
+            // splitContainer5
+            // 
+            this.splitContainer5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.splitContainer5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer5.IsSplitterFixed = true;
+            this.splitContainer5.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer5.Name = "splitContainer5";
+            this.splitContainer5.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer5.Panel1
+            // 
+            this.splitContainer5.Panel1.Controls.Add(this.groupBox2);
+            // 
+            // splitContainer5.Panel2
+            // 
+            this.splitContainer5.Panel2.Controls.Add(this.groupBox1);
+            this.splitContainer5.Size = new System.Drawing.Size(331, 268);
+            this.splitContainer5.SplitterDistance = 132;
+            this.splitContainer5.TabIndex = 0;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(278, 82);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 25);
+            this.textBox2.TabIndex = 9;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(278, 180);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 25);
+            this.textBox3.TabIndex = 9;
+            // 
             // Frm作業
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -379,6 +500,7 @@ namespace LinqLabs
             this.Name = "Frm作業";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm作業";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Frm作業_Load);
             this.panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.ResumeLayout(false);
@@ -398,6 +520,20 @@ namespace LinqLabs
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DsOrder)).EndInit();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.splitContainer3.Panel1.ResumeLayout(false);
+            this.splitContainer3.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).EndInit();
+            this.splitContainer3.ResumeLayout(false);
+            this.splitContainer4.Panel1.ResumeLayout(false);
+            this.splitContainer4.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer4)).EndInit();
+            this.splitContainer4.ResumeLayout(false);
+            this.splitContainer5.Panel1.ResumeLayout(false);
+            this.splitContainer5.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer5)).EndInit();
+            this.splitContainer5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -431,5 +567,12 @@ namespace LinqLabs
         private DataSet1TableAdapters.TableAdapterManager tableAdapterManager1;
         private DataSet1 DsOrder;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.SplitContainer splitContainer3;
+        private System.Windows.Forms.SplitContainer splitContainer4;
+        private System.Windows.Forms.SplitContainer splitContainer5;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }

@@ -15,6 +15,7 @@ namespace Starter
         public FrmLangForLINQ()
         {
             InitializeComponent();
+            productsTableAdapter1.Fill(dataSet11.Products);
         }
         private void button4_Click(object sender, EventArgs e)
         {
@@ -223,16 +224,16 @@ namespace Starter
             var p = nums.Where(n => n > 5).Select(n => new { n = n, s = n * n, c = n * n * n });
             dataGridView1.DataSource = p.ToList();
             //=========================================
-            var p2 = from o in dataSet11.Products
-                     where o.UnitPrice > 10
-                     select new
-                     {
-                         品名 = o.ProductName,
-                         o.UnitPrice,
-                         o.UnitsInStock,
-                         總價 = o.UnitsInStock * o.UnitPrice
-                     };
-
+            //var p2 = from o in dataSet11.Products
+            //         where o.UnitPrice > 10
+            //         select new
+            //         {
+            //             品名 = o.ProductName,
+            //             o.UnitPrice,
+            //             o.UnitsInStock,
+            //             總價 = o.UnitsInStock * o.UnitPrice
+            //         };
+            var p2 = dataSet11.Products.Where(o => o.UnitPrice > 50).Select(o=>new { 品名 = o.ProductName, o.UnitPrice, o.UnitsInStock, 總價 = o.UnitsInStock * o.UnitPrice });
             dataGridView2.DataSource = p2.ToList();
         }
     }

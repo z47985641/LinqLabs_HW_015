@@ -17,6 +17,25 @@ namespace LinqLabs
             InitializeComponent();
             ordersTableAdapter1.Fill(DsOrder.Orders);
             order_DetailsTableAdapter1.Fill(DsOrder.Order_Details);
+            students_scores = new List<Student>()
+                                         {
+                                            new Student{ Name = "aaa", Class = "CS_101", Chi = 80, Eng = 80, Math = 50, Gender = "Male" },
+                                            new Student{ Name = "bbb", Class = "CS_102", Chi = 80, Eng = 80, Math = 100, Gender = "Male" },
+                                            new Student{ Name = "ccc", Class = "CS_101", Chi = 60, Eng = 50, Math = 75, Gender = "Female" },
+                                            new Student{ Name = "ddd", Class = "CS_102", Chi = 80, Eng = 70, Math = 85, Gender = "Female" },
+                                            new Student{ Name = "eee", Class = "CS_101", Chi = 80, Eng = 80, Math = 50, Gender = "Female" },
+                                            new Student{ Name = "fff", Class = "CS_102", Chi = 80, Eng = 80, Math = 80, Gender = "Female" },
+                                          };
+        }
+        List<Student> students_scores;
+        public class Student
+        {
+            public string Name { get; set; }
+            public string Class { get; set; }
+            public int Chi { get; set; }
+            public int Eng { get; internal set; }
+            public int Math { get; set; }
+            public string Gender { get; set; }
         }
         private void Frm作業_Load(object sender, EventArgs e)
         {
@@ -105,6 +124,23 @@ namespace LinqLabs
             page(1);
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            var score_search = students_scores.Where(s =>
+            s.Eng.ToString() == textBox2.Text ||
+            s.Chi.ToString() == textBox2.Text ||
+            s.Math.ToString() == textBox2.Text||
+            s.Name == textBox2.Text
+            );
+            dataGridView1.DataSource = score_search.ToList();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+          
+        }
+
         private void button9_Click(object sender, EventArgs e)
         {
             num = int.Parse(textBox1.Text);
