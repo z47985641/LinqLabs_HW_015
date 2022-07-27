@@ -32,6 +32,7 @@ namespace LinqLabs
             this.panel1 = new System.Windows.Forms.Panel();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -55,7 +56,6 @@ namespace LinqLabs
             this.ordersTableAdapter1 = new LinqLabs.DataSet1TableAdapters.OrdersTableAdapter();
             this.tableAdapterManager1 = new LinqLabs.DataSet1TableAdapters.TableAdapterManager();
             this.DsOrder = new LinqLabs.DataSet1();
-            this.button9 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -111,6 +111,7 @@ namespace LinqLabs
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.groupBox1.Enabled = false;
             this.groupBox1.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.groupBox1.Location = new System.Drawing.Point(1000, 0);
             this.groupBox1.Name = "groupBox1";
@@ -118,6 +119,17 @@ namespace LinqLabs
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "LINQ to Northwind DataSet - Products";
+            // 
+            // button9
+            // 
+            this.button9.AutoSize = true;
+            this.button9.Location = new System.Drawing.Point(170, 119);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(135, 27);
+            this.button9.TabIndex = 8;
+            this.button9.Text = "設定";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button8
             // 
@@ -357,17 +369,6 @@ namespace LinqLabs
             // 
             this.DsOrder.DataSetName = "DataSet1";
             this.DsOrder.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // button9
-            // 
-            this.button9.AutoSize = true;
-            this.button9.Location = new System.Drawing.Point(170, 119);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(135, 27);
-            this.button9.TabIndex = 8;
-            this.button9.Text = "設定";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // Frm作業
             // 

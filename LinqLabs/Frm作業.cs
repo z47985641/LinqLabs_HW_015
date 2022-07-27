@@ -20,39 +20,45 @@ namespace LinqLabs
         }
         private void Frm作業_Load(object sender, EventArgs e)
         {
-            // TODO: 這行程式碼會將資料載入 'northwindDataSet.Order_Details' 資料表。您可以視需要進行移動或移除。
+            num = int.Parse(textBox1.Text);
 
-            var O_show = from o in DsOrder.Orders
-                         group o by o.OrderDate.Year into g
-                         select g;
+            var O_show = DsOrder.Orders.GroupBy(o => o.OrderDate.Year);
+            //篩選資料表中的年份
             dataGridView1.DataSource = O_show.ToList();
+            //將資料顯示在dataGridView1
             foreach (DataGridViewRow R in dataGridView1.Rows)
                 Cb_year.Items.Add(R.Cells[0].Value.ToString());
+            //將dataGridView1的資料匯入combo box
             dataGridView1.DataSource = null;
+            //清除dataGridView1的值
 
-            num = int.Parse(textBox1.Text);
+            //foreach (var R in O_show)
+            //    Cb_year.Items.Add(R);
+            //使用此方式會使帶出的值非int
         }
         int front, num, back;
         private void btn_DataShow(object sender, EventArgs e)
         {
-            var O_show = from o in DsOrder.Orders
-                         select o;
-            var Od_show = from od in DsOrder.Order_Details
-                          select od;
+            groupBox1.Enabled = true;
+            var O_show = DsOrder.Orders;
+            var Od_show = DsOrder.Order_Details;
             dataGridView1.DataSource = O_show.Take(num).ToList();
             dataGridView2.DataSource = Od_show.Take(num).ToList();
         }
         private void button6_Click(object sender, EventArgs e)
         {
-            if(Cb_year.Text == "")
+            if (Cb_year.Text == "")
             {
                 MessageBox.Show("請選擇年份");
                 return;
             }
-            var O_show = from o in DsOrder.Orders
-                         where o.OrderDate.Year.ToString() == Cb_year.Text
-                         select o;
+            groupBox1.Enabled = true;
 
+            var O_show = DsOrder.Orders.Where(o => o.OrderDate.Year.ToString() == Cb_year.Text);
+            //var Od_show = DsOrder.Order_Details.Join(DsOrder.Orders, DsOrder.Order_Details, DsOrder.Order_Details => new { })
+            //var O_show = from o in DsOrder.Orders
+            //             where o.OrderDate.Year.ToString() == Cb_year.Text
+            //             select o;
             var Od_show = from od in DsOrder.Order_Details
                           join o in DsOrder.Orders
                           on od.OrderID equals o.OrderID
