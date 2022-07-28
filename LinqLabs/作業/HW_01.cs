@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LinqLabs
 {
-    public partial class Frm作業 : Form
+    public partial class HW_01 : Form
     {
-        public Frm作業()
+        public HW_01()
         {
             InitializeComponent();
             ordersTableAdapter1.Fill(DsOrder.Orders);
@@ -125,21 +125,7 @@ namespace LinqLabs
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            var score_search = students_scores.Where(s =>
-            s.Eng.ToString() == textBox2.Text ||
-            s.Chi.ToString() == textBox2.Text ||
-            s.Math.ToString() == textBox2.Text||
-            s.Name == textBox2.Text
-            );
-            dataGridView1.DataSource = score_search.ToList();
-        }
 
-        private void button10_Click(object sender, EventArgs e)
-        {
-          
-        }
 
         private void button9_Click(object sender, EventArgs e)
         {

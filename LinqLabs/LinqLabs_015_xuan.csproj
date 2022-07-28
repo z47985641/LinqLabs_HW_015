@@ -85,14 +85,32 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Frm作業.cs">
+    <Compile Include="作業\HW_01.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm作業.Designer.cs">
-      <DependentUpon>Frm作業.cs</DependentUpon>
+    <Compile Include="作業\HW_01.Designer.cs">
+      <DependentUpon>HW_01.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="作業\HW_02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="作業\HW_02.Designer.cs">
+      <DependentUpon>HW_02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="作業\HW_03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="作業\HW_03.Designer.cs">
+      <DependentUpon>HW_03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="作業\HW_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="作業\HW_main.Designer.cs">
+      <DependentUpon>HW_main.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="1. FrmHelloLinq.resx">
       <DependentUpon>1. FrmHelloLinq.cs</DependentUpon>
     </EmbeddedResource>
@@ -108,8 +126,8 @@
     <EmbeddedResource Include="5. FrmLinq_To_Entity.resx">
       <DependentUpon>5. FrmLinq_To_Entity.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm作業.resx">
-      <DependentUpon>Frm作業.cs</DependentUpon>
+    <EmbeddedResource Include="作業\HW_01.resx">
+      <DependentUpon>HW_01.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -121,6 +139,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="作業\HW_02.resx">
+      <DependentUpon>HW_02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="作業\HW_03.resx">
+      <DependentUpon>HW_03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="作業\HW_main.resx">
+      <DependentUpon>HW_main.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>
