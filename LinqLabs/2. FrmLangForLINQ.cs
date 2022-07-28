@@ -236,7 +236,30 @@ namespace Starter
             var p2 = dataSet11.Products.Where(o => o.UnitPrice > 50).Select(o=>new { 品名 = o.ProductName, o.UnitPrice, o.UnitsInStock, 總價 = o.UnitsInStock * o.UnitPrice });
             dataGridView2.DataSource = p2.ToList();
         }
+
+        private void button32_Click(object sender, EventArgs e)
+        {
+            string s = "1234567890";
+            int count = s.Wordcount();
+            MessageBox.Show(count.ToString());
+            count = s.Charindex(3);
+            MessageBox.Show(count.ToString());
+        }
     }
+
+    public static class MystringExtension
+    {
+        public static int Wordcount(this string s)
+        {
+            return s.Length;
+        }
+
+        public static int Charindex(this string s, int index)
+        {
+            return s[index];
+        }
+    }
+
     class Mypoint
     {
         public Mypoint() { }
