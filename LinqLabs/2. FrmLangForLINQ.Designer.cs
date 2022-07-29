@@ -600,7 +600,10 @@
             this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager1.Order_DetailsTableAdapter = null;
             this.tableAdapterManager1.OrdersTableAdapter = null;
+            this.tableAdapterManager1.ProductPhotoTableAdapter = null;
+            this.tableAdapterManager1.ProductProductPhotoTableAdapter = null;
             this.tableAdapterManager1.ProductsTableAdapter = this.productsTableAdapter1;
+            this.tableAdapterManager1.ProductTableAdapter = null;
             this.tableAdapterManager1.UpdateOrder = LinqLabs.DataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // productsTableAdapter2
@@ -617,6 +620,7 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmLangForLINQ";
             this.Text = "C# 2.0  3.0";
+            this.Load += new System.EventHandler(this.FrmLangForLINQ_Load);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox1.ResumeLayout(false);
