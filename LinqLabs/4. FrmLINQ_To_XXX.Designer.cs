@@ -93,7 +93,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(5);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -105,7 +105,7 @@
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView3.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dataGridView3.Margin = new System.Windows.Forms.Padding(5);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.RowHeadersWidth = 62;
             this.dataGridView3.RowTemplate.Height = 24;
@@ -117,7 +117,7 @@
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView2.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(5);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 62;
             this.dataGridView2.RowTemplate.Height = 24;
@@ -128,7 +128,7 @@
             // 
             this.splitContainer4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer4.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer4.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.splitContainer4.Margin = new System.Windows.Forms.Padding(5);
             this.splitContainer4.Name = "splitContainer4";
             this.splitContainer4.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -148,7 +148,7 @@
             // 
             this.splitContainer3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer3.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.splitContainer3.Margin = new System.Windows.Forms.Padding(5);
             this.splitContainer3.Name = "splitContainer3";
             this.splitContainer3.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -168,7 +168,7 @@
             // 
             this.splitContainer5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer5.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer5.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.splitContainer5.Margin = new System.Windows.Forms.Padding(5);
             this.splitContainer5.Name = "splitContainer5";
             // 
             // splitContainer5.Panel1
@@ -187,9 +187,9 @@
             // 
             this.listBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 22;
+            this.listBox1.ItemHeight = 15;
             this.listBox1.Location = new System.Drawing.Point(0, 0);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(5);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(267, 561);
             this.listBox1.TabIndex = 0;
@@ -198,7 +198,7 @@
             // 
             this.treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.treeView1.Location = new System.Drawing.Point(0, 0);
-            this.treeView1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.treeView1.Margin = new System.Windows.Forms.Padding(5);
             this.treeView1.Name = "treeView1";
             this.treeView1.Size = new System.Drawing.Size(537, 561);
             this.treeView1.TabIndex = 2;
@@ -207,7 +207,7 @@
             // 
             this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer2.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.splitContainer2.Margin = new System.Windows.Forms.Padding(5);
             this.splitContainer2.Name = "splitContainer2";
             this.splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -227,7 +227,7 @@
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(5);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -250,8 +250,8 @@
             // 
             // button15
             // 
-            this.button15.Location = new System.Drawing.Point(48, 5);
-            this.button15.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.button15.Location = new System.Drawing.Point(48, 27);
+            this.button15.Margin = new System.Windows.Forms.Padding(5);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(517, 48);
             this.button15.TabIndex = 111;
@@ -262,10 +262,10 @@
             // 
             this.groupBox3.Controls.Add(this.button13);
             this.groupBox3.Controls.Add(this.button8);
-            this.groupBox3.Location = new System.Drawing.Point(20, 929);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.groupBox3.Location = new System.Drawing.Point(48, 870);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(5);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(5);
             this.groupBox3.Size = new System.Drawing.Size(518, 154);
             this.groupBox3.TabIndex = 110;
             this.groupBox3.TabStop = false;
@@ -276,7 +276,7 @@
             this.button13.BackColor = System.Drawing.SystemColors.Control;
             this.button13.ForeColor = System.Drawing.Color.Black;
             this.button13.Location = new System.Drawing.Point(27, 92);
-            this.button13.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.button13.Margin = new System.Windows.Forms.Padding(5);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(386, 46);
             this.button13.TabIndex = 105;
@@ -286,7 +286,7 @@
             // button8
             // 
             this.button8.Location = new System.Drawing.Point(27, 39);
-            this.button8.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.button8.Margin = new System.Windows.Forms.Padding(5);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(381, 42);
             this.button8.TabIndex = 103;
@@ -299,10 +299,10 @@
             this.groupBox5.Controls.Add(this.button9);
             this.groupBox5.Controls.Add(this.button10);
             this.groupBox5.Controls.Add(this.button11);
-            this.groupBox5.Location = new System.Drawing.Point(22, 689);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.groupBox5.Location = new System.Drawing.Point(48, 642);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(5);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(5);
             this.groupBox5.Size = new System.Drawing.Size(517, 227);
             this.groupBox5.TabIndex = 109;
             this.groupBox5.TabStop = false;
@@ -313,7 +313,7 @@
             this.button4.BackColor = System.Drawing.SystemColors.Control;
             this.button4.ForeColor = System.Drawing.Color.Black;
             this.button4.Location = new System.Drawing.Point(159, 144);
-            this.button4.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.button4.Margin = new System.Windows.Forms.Padding(5);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(137, 42);
             this.button4.TabIndex = 85;
@@ -325,7 +325,7 @@
             this.button9.BackColor = System.Drawing.SystemColors.Control;
             this.button9.ForeColor = System.Drawing.Color.Black;
             this.button9.Location = new System.Drawing.Point(11, 144);
-            this.button9.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.button9.Margin = new System.Windows.Forms.Padding(5);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(137, 42);
             this.button9.TabIndex = 84;
@@ -337,7 +337,7 @@
             this.button10.BackColor = System.Drawing.SystemColors.Control;
             this.button10.ForeColor = System.Drawing.Color.Black;
             this.button10.Location = new System.Drawing.Point(12, 39);
-            this.button10.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.button10.Margin = new System.Windows.Forms.Padding(5);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(413, 42);
             this.button10.TabIndex = 83;
@@ -349,7 +349,7 @@
             this.button11.BackColor = System.Drawing.SystemColors.Control;
             this.button11.ForeColor = System.Drawing.Color.Black;
             this.button11.Location = new System.Drawing.Point(11, 92);
-            this.button11.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.button11.Margin = new System.Windows.Forms.Padding(5);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(414, 42);
             this.button11.TabIndex = 82;
@@ -360,10 +360,10 @@
             // 
             this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.button5);
-            this.groupBox2.Location = new System.Drawing.Point(22, 276);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.groupBox2.Location = new System.Drawing.Point(48, 279);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(5);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(5);
             this.groupBox2.Size = new System.Drawing.Size(517, 156);
             this.groupBox2.TabIndex = 107;
             this.groupBox2.TabStop = false;
@@ -374,7 +374,7 @@
             this.button1.BackColor = System.Drawing.SystemColors.Control;
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Location = new System.Drawing.Point(12, 39);
-            this.button1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.button1.Margin = new System.Windows.Forms.Padding(5);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(494, 42);
             this.button1.TabIndex = 7;
@@ -386,7 +386,7 @@
             this.button5.BackColor = System.Drawing.SystemColors.Control;
             this.button5.ForeColor = System.Drawing.Color.Black;
             this.button5.Location = new System.Drawing.Point(12, 92);
-            this.button5.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.button5.Margin = new System.Windows.Forms.Padding(5);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(494, 42);
             this.button5.TabIndex = 8;
@@ -398,10 +398,10 @@
             this.groupBox4.Controls.Add(this.button3);
             this.groupBox4.Controls.Add(this.button38);
             this.groupBox4.Controls.Add(this.button31);
-            this.groupBox4.Location = new System.Drawing.Point(22, 473);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.groupBox4.Location = new System.Drawing.Point(48, 436);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(5);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(5);
             this.groupBox4.Size = new System.Drawing.Size(517, 205);
             this.groupBox4.TabIndex = 106;
             this.groupBox4.TabStop = false;
@@ -412,7 +412,7 @@
             this.button3.BackColor = System.Drawing.SystemColors.Control;
             this.button3.ForeColor = System.Drawing.Color.Black;
             this.button3.Location = new System.Drawing.Point(12, 92);
-            this.button3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.button3.Margin = new System.Windows.Forms.Padding(5);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(473, 42);
             this.button3.TabIndex = 3;
@@ -424,7 +424,7 @@
             this.button38.BackColor = System.Drawing.SystemColors.Control;
             this.button38.ForeColor = System.Drawing.Color.Black;
             this.button38.Location = new System.Drawing.Point(12, 144);
-            this.button38.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.button38.Margin = new System.Windows.Forms.Padding(5);
             this.button38.Name = "button38";
             this.button38.Size = new System.Drawing.Size(473, 42);
             this.button38.TabIndex = 2;
@@ -436,7 +436,7 @@
             this.button31.BackColor = System.Drawing.SystemColors.Control;
             this.button31.ForeColor = System.Drawing.Color.Black;
             this.button31.Location = new System.Drawing.Point(12, 39);
-            this.button31.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.button31.Margin = new System.Windows.Forms.Padding(5);
             this.button31.Name = "button31";
             this.button31.Size = new System.Drawing.Size(473, 42);
             this.button31.TabIndex = 0;
@@ -448,10 +448,10 @@
             this.groupBox1.Controls.Add(this.button6);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.button7);
-            this.groupBox1.Location = new System.Drawing.Point(33, 64);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.groupBox1.Location = new System.Drawing.Point(48, 76);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(5);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(5);
             this.groupBox1.Size = new System.Drawing.Size(517, 202);
             this.groupBox1.TabIndex = 105;
             this.groupBox1.TabStop = false;
@@ -460,19 +460,20 @@
             // button6
             // 
             this.button6.BackColor = System.Drawing.SystemColors.Control;
-            this.button6.Location = new System.Drawing.Point(27, 39);
-            this.button6.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.button6.Location = new System.Drawing.Point(95, 28);
+            this.button6.Margin = new System.Windows.Forms.Padding(5);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(326, 42);
             this.button6.TabIndex = 101;
             this.button6.Text = "group ";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.Control;
-            this.button2.Location = new System.Drawing.Point(27, 144);
-            this.button2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.button2.Location = new System.Drawing.Point(95, 132);
+            this.button2.Margin = new System.Windows.Forms.Padding(5);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(326, 42);
             this.button2.TabIndex = 104;
@@ -482,8 +483,8 @@
             // button7
             // 
             this.button7.BackColor = System.Drawing.SystemColors.Control;
-            this.button7.Location = new System.Drawing.Point(27, 92);
-            this.button7.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.button7.Location = new System.Drawing.Point(95, 80);
+            this.button7.Margin = new System.Windows.Forms.Padding(5);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(326, 42);
             this.button7.TabIndex = 102;
@@ -492,14 +493,15 @@
             // 
             // FrmLINQ_To_XXX
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1403, 1050);
             this.Controls.Add(this.splitContainer1);
-            this.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmLINQ_To_XXX";
             this.Text = "FrmLINQ_To_XXX";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
