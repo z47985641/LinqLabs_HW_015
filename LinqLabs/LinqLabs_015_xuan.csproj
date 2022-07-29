@@ -97,6 +97,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="作業\HW_04.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="作業\HW_04.Designer.cs">
+      <DependentUpon>HW_04.cs</DependentUpon>
+    </Compile>
     <Compile Include="NVModel1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -177,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="作業\HW_03.resx">
       <DependentUpon>HW_03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="作業\HW_04.resx">
+      <DependentUpon>HW_04.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="作業\HW_main.resx">
       <DependentUpon>HW_main.cs</DependentUpon>

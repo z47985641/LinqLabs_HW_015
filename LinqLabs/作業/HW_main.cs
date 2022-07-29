@@ -40,5 +40,13 @@ namespace LinqLabs.作業
             HW03.WindowState = FormWindowState.Maximized;
             HW03.Show();
         }
+
+        private void toolStripButton4_Click(object sender, EventArgs e)
+        {
+            HW_04 HW04 = new HW_04();
+            HW04.MdiParent = this;
+            HW04.WindowState = FormWindowState.Maximized;
+            HW04.Show();
+        }
     }
 }
