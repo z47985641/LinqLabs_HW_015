@@ -245,6 +245,11 @@ namespace Starter
             count = s.Charindex(3);
             MessageBox.Show(count.ToString());
         }
+
+        private void FrmLangForLINQ_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
     public static class MystringExtension
