@@ -51,7 +51,6 @@ namespace LinqLabs
             this.ordersGroupBy年月ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.總銷售金額ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.byYearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.byMounthToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bySelelsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.銷售最好的top5業務員ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nW產品最高單價前5筆包括類別名稱ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -208,6 +207,7 @@ namespace LinqLabs
             // treeView1
             // 
             this.treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.treeView1.Font = new System.Drawing.Font("微軟正黑體", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.treeView1.Location = new System.Drawing.Point(0, 0);
             this.treeView1.Name = "treeView1";
             this.treeView1.Size = new System.Drawing.Size(916, 1033);
@@ -306,7 +306,6 @@ namespace LinqLabs
             // 
             this.總銷售金額ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.byYearToolStripMenuItem,
-            this.byMounthToolStripMenuItem,
             this.bySelelsToolStripMenuItem});
             this.總銷售金額ToolStripMenuItem.Name = "總銷售金額ToolStripMenuItem";
             this.總銷售金額ToolStripMenuItem.Size = new System.Drawing.Size(291, 22);
@@ -316,21 +315,16 @@ namespace LinqLabs
             // byYearToolStripMenuItem
             // 
             this.byYearToolStripMenuItem.Name = "byYearToolStripMenuItem";
-            this.byYearToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.byYearToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.byYearToolStripMenuItem.Text = "by Year";
-            // 
-            // byMounthToolStripMenuItem
-            // 
-            this.byMounthToolStripMenuItem.Name = "byMounthToolStripMenuItem";
-            this.byMounthToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
-            this.byMounthToolStripMenuItem.Text = "by Year_Mounth";
-            this.byMounthToolStripMenuItem.Click += new System.EventHandler(this.byMounthToolStripMenuItem_Click);
+            this.byYearToolStripMenuItem.Click += new System.EventHandler(this.byYearToolStripMenuItem_Click);
             // 
             // bySelelsToolStripMenuItem
             // 
             this.bySelelsToolStripMenuItem.Name = "bySelelsToolStripMenuItem";
-            this.bySelelsToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.bySelelsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.bySelelsToolStripMenuItem.Text = "by Selels";
+            this.bySelelsToolStripMenuItem.Click += new System.EventHandler(this.bySelelsToolStripMenuItem_Click);
             // 
             // 銷售最好的top5業務員ToolStripMenuItem
             // 
@@ -455,7 +449,6 @@ namespace LinqLabs
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TreeView treeView1;
         private System.Windows.Forms.ToolStripMenuItem byYearToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem byMounthToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bySelelsToolStripMenuItem;
         private NVDataSet nvDataSet1;
         private NVDataSetTableAdapters.ProductsTableAdapter productsTableAdapter1;
