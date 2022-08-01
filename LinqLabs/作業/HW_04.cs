@@ -122,11 +122,6 @@ namespace LinqLabs
 
             }
         }
-
-        private void 總銷售金額ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-        }
-
         private void 銷售最好的top5業務員ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             treeView1.Nodes.Clear();
@@ -135,17 +130,22 @@ namespace LinqLabs
                      on o.OrderID equals od.OrderID
                      group od by od.OrderID into p
                      orderby p.Key descending
-                     select new { Seles = p.Key, TotalPrice = $"{p.Sum(o => o.UnitPrice * o.Quantity):C2}" };
+                     select new { orderID = p.Key, TotalPrice = p.Sum(o => o.UnitPrice * o.Quantity) };
 
             var q = from p in q3
                     join o in nvDataSet1.Orders
-                    on p.Seles equals o.OrderID
+                    on p.orderID equals o.OrderID
                     join ee in nvDataSet1.Employees
                     on o.EmployeeID equals ee.EmployeeID
                     orderby o.OrderDate
-                    select new { mykey = ee.FirstName, year = o.OrderDate.Year, mounth = o.OrderDate.Month, myprice = p.TotalPrice };
+                    select new { Sales = ee.FirstName, year = o.OrderDate.Year, myprice = p.TotalPrice };
 
-            dataGridView1.DataSource = q.Take(5).ToList();
+            var s1 = from o in q
+                     group o by o.Sales into g
+                     orderby g.Sum(o => o.myprice) descending
+                     select new { Sales = g.Key, myprice = $"{g.Sum(o => o.myprice):C2}" };
+
+            dataGridView1.DataSource = s1.Take(5).ToList();
         }
 
 
@@ -182,35 +182,18 @@ namespace LinqLabs
                     join ee in nvDataSet1.Employees
                     on o.EmployeeID equals ee.EmployeeID
                     orderby o.OrderDate
-                    select new { Sales = ee.FirstName, year = o.OrderDate.Year, mounth = o.OrderDate.Month, myprice = p.TotalPrice };
+                    select new { Sales = ee.FirstName, year = o.OrderDate.Year, myprice = p.TotalPrice };
+
             var s1 = from o in q 
                      group o by o.Sales into g
-                     select new { Sales = g.Key, myprice = g.Sum(o=>o.myprice) };
-            var s2 = from o in q
-                     group o by o.year into g
-                     select new { Year = g.Key, myprice = g.Sum(o => o.myprice) };
-            var s3 = from o in q
-                     group o by o.mounth into g
-                     select new { Mounth = g.Key, myprice = g.Sum(o => o.myprice) };
+                     orderby g.Sum(o => o.myprice) descending
+                     select new { Sales = g.Key, myprice = $"{g.Sum(o => o.myprice):C2}" };
             
             foreach (var n in s1)
             {
-                string first = $"{n.Sales}({n.myprice})";
+                string first = $"{n.Sales}個人總銷售量 : {n.myprice:C2}";
                 TreeNode X = treeView1.Nodes.Add(first);
-                foreach (var p in s2)
-                {
-                    string sec = $"{p.Year} 年 ({p.myprice})";
-                    TreeNode X2 = X.Nodes.Add(sec);
-                    foreach (var iterm in s3)
-                    {
-                        string thr = $"{iterm.Mounth} 月 ({p.myprice})";
-                        TreeNode X3 = X2.Nodes.Add(thr);
-                    }
-                }
             }
-
-            dataGridView1.DataSource = q.ToList();
-
         }
 
         private void byYearToolStripMenuItem_Click(object sender, EventArgs e)

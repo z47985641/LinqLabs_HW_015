@@ -310,7 +310,6 @@ namespace LinqLabs
             this.總銷售金額ToolStripMenuItem.Name = "總銷售金額ToolStripMenuItem";
             this.總銷售金額ToolStripMenuItem.Size = new System.Drawing.Size(291, 22);
             this.總銷售金額ToolStripMenuItem.Text = "總銷售金額";
-            this.總銷售金額ToolStripMenuItem.Click += new System.EventHandler(this.總銷售金額ToolStripMenuItem_Click);
             // 
             // byYearToolStripMenuItem
             // 
