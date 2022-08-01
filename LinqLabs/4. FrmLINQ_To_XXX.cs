@@ -166,5 +166,10 @@ namespace Starter
 
             dataGridView2.DataSource = q2.ToList();
         }
+
+        private void groupBox4_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

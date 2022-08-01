@@ -12,20 +12,27 @@ namespace LinqLabs
     using System;
     using System.Collections.Generic;
     
-    public partial class Category
+    public partial class Products
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Category()
+        public Products()
         {
-            this.Products = new HashSet<Product>();
+            this.Order_Details = new HashSet<Order_Details>();
         }
     
-        public int CategoryID { get; set; }
-        public string CategoryName { get; set; }
-        public string Description { get; set; }
-        public byte[] Picture { get; set; }
+        public int ProductID { get; set; }
+        public string ProductName { get; set; }
+        public Nullable<int> SupplierID { get; set; }
+        public Nullable<int> CategoryID { get; set; }
+        public string QuantityPerUnit { get; set; }
+        public Nullable<decimal> UnitPrice { get; set; }
+        public Nullable<short> UnitsInStock { get; set; }
+        public Nullable<short> UnitsOnOrder { get; set; }
+        public Nullable<short> ReorderLevel { get; set; }
+        public bool Discontinued { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Product> Products { get; set; }
+        public virtual ICollection<Order_Details> Order_Details { get; set; }
+        public virtual Categories Categories { get; set; }
     }
 }

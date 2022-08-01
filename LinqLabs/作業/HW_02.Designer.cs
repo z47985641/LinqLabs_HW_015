@@ -50,6 +50,7 @@ namespace LinqLabs.作業
             this.dataSet11 = new LinqLabs.DataSet1();
             this.productsTableAdapter1 = new LinqLabs.DataSet1TableAdapters.ProductsTableAdapter();
             this.productPhotoTableAdapter1 = new LinqLabs.DataSet1TableAdapters.ProductPhotoTableAdapter();
+            this.productProductPhotoTableAdapter1 = new LinqLabs.DataSet1TableAdapters.ProductProductPhotoTableAdapter();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -243,7 +244,7 @@ namespace LinqLabs.作業
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // dataGridView1
-
+            // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -307,6 +308,10 @@ namespace LinqLabs.作業
             // 
             this.productPhotoTableAdapter1.ClearBeforeFill = true;
             // 
+            // productProductPhotoTableAdapter1
+            // 
+            this.productProductPhotoTableAdapter1.ClearBeforeFill = true;
+            // 
             // HW_02
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -359,5 +364,6 @@ namespace LinqLabs.作業
         private DataSet1 dataSet11;
         private DataSet1TableAdapters.ProductsTableAdapter productsTableAdapter1;
         private DataSet1TableAdapters.ProductPhotoTableAdapter productPhotoTableAdapter1;
+        private DataSet1TableAdapters.ProductProductPhotoTableAdapter productProductPhotoTableAdapter1;
     }
 }

@@ -79,14 +79,8 @@
     <Compile Include="3. FrmLINQ架構介紹_InsideLINQ.Designer.cs">
       <DependentUpon>3. FrmLINQ架構介紹_InsideLINQ.cs</DependentUpon>
     </Compile>
-    <Compile Include="5. FrmLinq_To_Entity.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="5. FrmLinq_To_Entity.Designer.cs">
-      <DependentUpon>5. FrmLinq_To_Entity.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Category.cs">
-      <DependentUpon>NVModel1.tt</DependentUpon>
+    <Compile Include="Categories.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Class1.cs" />
     <Compile Include="DataSet1.cs">
@@ -97,32 +91,46 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Customers.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Employees.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="NVDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NVDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Orders.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Order_Details.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Products.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="作業\HW_04.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="作業\HW_04.Designer.cs">
       <DependentUpon>HW_04.cs</DependentUpon>
-    </Compile>
-    <Compile Include="NVModel1.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>NVModel1.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="NVModel1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>NVModel1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="NVModel1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>NVModel1.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Order.cs">
-      <DependentUpon>NVModel1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Product.cs">
-      <DependentUpon>NVModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="作業\HW_01.cs">
       <SubType>Form</SubType>
@@ -162,9 +170,6 @@
     <EmbeddedResource Include="3. FrmLINQ架構介紹_InsideLINQ.resx">
       <DependentUpon>3. FrmLINQ架構介紹_InsideLINQ.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="5. FrmLinq_To_Entity.resx">
-      <DependentUpon>5. FrmLinq_To_Entity.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="作業\HW_01.resx">
       <DependentUpon>HW_01.cs</DependentUpon>
     </EmbeddedResource>
@@ -201,14 +206,25 @@
     <None Include="DataSet1.xss">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>
-    <EntityDeploy Include="NVModel1.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>NVModel1.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="NVModel1.edmx.diagram">
-      <DependentUpon>NVModel1.edmx</DependentUpon>
+    <None Include="NVDataSet.xsc">
+      <DependentUpon>NVDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NVDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NVDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="NVDataSet.xss">
+      <DependentUpon>NVDataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
+    <EntityDeploy Include="Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -223,15 +239,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="NVModel1.Context.tt">
+    <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>NVModel1.Context.cs</LastGenOutput>
-      <DependentUpon>NVModel1.edmx</DependentUpon>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="NVModel1.tt">
+    <Content Include="Model1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>NVModel1.edmx</DependentUpon>
-      <LastGenOutput>NVModel1.cs</LastGenOutput>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>

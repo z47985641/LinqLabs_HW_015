@@ -13,10 +13,10 @@ namespace LinqLabs
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class NorthwindEntities : DbContext
+    public partial class NorthwindEntities2 : DbContext
     {
-        public NorthwindEntities()
-            : base("name=NorthwindEntities")
+        public NorthwindEntities2()
+            : base("name=NorthwindEntities2")
         {
         }
     
@@ -25,8 +25,11 @@ namespace LinqLabs
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Category> Categories { get; set; }
-        public virtual DbSet<Order> Orders { get; set; }
-        public virtual DbSet<Product> Products { get; set; }
+        public virtual DbSet<Customers> Customers { get; set; }
+        public virtual DbSet<Employees> Employees { get; set; }
+        public virtual DbSet<Order_Details> Order_Details { get; set; }
+        public virtual DbSet<Orders> Orders { get; set; }
+        public virtual DbSet<Products> Products { get; set; }
+        public virtual DbSet<Categories> Categories { get; set; }
     }
 }
